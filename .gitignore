@@ -1,0 +1,16 @@
+# Compiled executables
+astar_demo
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
