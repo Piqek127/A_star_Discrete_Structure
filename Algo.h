@@ -1,7 +1,17 @@
 #ifndef ALGO_H
 #define ALGO_H
 
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
 #include "PathNode.h"
+
+
 
 // Task 1 — Mesh Network Packet Routing
 PathNode* findMeshPath(double weightMatrix[100][100], int startNode, int goalNode);

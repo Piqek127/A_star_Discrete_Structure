@@ -1,7 +1,55 @@
 #include "Algo.h"
+namespace
+{
+    namespace Task1
+    {
+        int calculateDegree(double matrix[100][100], int node){
+            int degree = 0;
+            for(int i = 0; i < 100; i++){
+                if(matrix[node][i] > 0) ++degree;
+            }
+            return degree;
+        }
+
+        double calculateCost(double matrix[100][100], int u, int v){
+            double cost = matrix[u][v] + 0.1*calculateDegree(matrix, v);
+            return cost;
+        }
+
+        double calculateHeuristic(/* parameters */);
+    }
+
+    namespace Task2
+    {
+        // Helpers exclusively for Task 2
+        double calculateEnergy(/* parameters */);
+
+        double calculateHeuristic(/* parameters */);
+    }
+
+    namespace Task3
+    {
+        // Helpers exclusively for Task 3
+    }
+
+    namespace Task4
+    {
+        // Helpers exclusively for Task 4
+    }
+
+    namespace Task5
+    {
+        // Helpers exclusively for Task 5
+    }
+}
+
 
 // TODO: Implement Task 1 A* search.
-PathNode* findMeshPath(double [100][100], int, int) {
+PathNode* findMeshPath(double weightMatrix[100][100], int start, int goal) {
+    vector<PathNode*> open;
+    vector<PathNode*> closed;
+
+    
     return nullptr;
 }
 
